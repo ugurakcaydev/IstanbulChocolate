@@ -10,54 +10,82 @@
         border-bottom-right-radius: .3rem;
     }
 }
-body{
+
+html,
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65rem;
+    height: 100%;
     width: 100%;
-
-
 }
+
 form {
-    background-color: aqua;
-    width: 20%;
+    width: 25%;
     padding: 2rem;
-    height: 75%;
-    
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1rem inset #ccc;
 }
-.insideform{
+
+.insideform {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: coral;
     height: 100%;
-    padding: 70px;
-    
+    padding: 40px;
 }
-.logo{
-    background-color: black;
-    width: 7rem;
-    height: 7rem;
+
+.logo {
+    background-color: rgba(73, 40, 150, 0.315);
+    width: 10rem;
+    height: 10rem;
     margin-bottom: 30px;
 
-
 }
-.welcome{
+
+.please {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.please span {
+    font-size: medium;
+}
+
+.welcome {
     font-size: x-large;
     text-align: center;
     font-weight: 650;
     margin-bottom: 30px;
 
 }
-.entryarea{
+
+.entryarea {
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     position: relative;
-    height: 10px;
+    height: 50px;
+    display: flex;
 }
-.entryarea input{
+
+.entryarea i {
+    position: absolute;
+    z-index: 1111;
+    margin-left: 90%;
+    width: 100%;
+    height: 100%;
+    margin-top: 13px;
+    font-size: 24px;
+}
+
+.entryarea input {
     position: absolute;
     width: 100%;
     height: 3rem;
@@ -66,31 +94,80 @@ form {
     padding-left: 10px;
     z-index: 1111;
     background-color: transparent;
-    
+    border-radius: 8px;
 }
-.labelline{
+
+.labelline {
 
     position: absolute;
     padding: 0 20px;
     margin-top: 10px;
     color: black;
     font-size: large;
-    background-color: coral;
     transition: 0.2s ease;
 
 }
+
 input:focus,
-input:valid{
+input:valid {
     color: #6f0;
     border: 4px solid #6f0;
 
 }
-input:focus +.labelline,
-input:valid+.labelline{
+
+input:focus+.labelline,
+input:valid+.labelline {
     color: #6f0;
     padding: 0 5px;
-    transform: translate(3px,-24px) scale(0.88);
+    transform: translate(3px, -24px) scale(0.88);
     z-index: 1111;
+    background-color: white;
+}
 
+.remember {
+    width: 100%;
+    height: 1rem;
+    margin-bottom: 30px;
+    color: #757575;
+}
+
+.login {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.login input {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 2.5rem;
+    text-align: center;
+    margin: 0 auto;
+    font-size: larger;
+}
+
+.forgot {
+    margin-bottom: 5rem;
+}
+
+.forgot span a {
+    text-decoration: none;
+    color: #757575;
+    font-size: larger;
+}
+
+.register span {
+    font-size: larger;
+    margin-right: 16px;
+    font-weight: 600;
+}
+
+.register input {
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: red;
+    background-color: transparent;
 
 }
