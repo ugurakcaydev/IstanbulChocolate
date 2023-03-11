@@ -33,7 +33,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
+    border-right: 1px solid #80471c;
     background-color: #fff;
 }
 
@@ -46,17 +46,24 @@ form {
     flex-direction: column;
     overflow: hidden;
     flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .ihistory {
     width: 100%;
     height: auto;
-    background-color: #6f0;
+    margin-top: -1rem;
 }
 
 .title {
     width: 100%;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     color: #80471c;
 }
 
@@ -64,6 +71,7 @@ form {
     font-size: 20px;
     line-height: 2rem;
     word-wrap: break-word;
+    color: #80471c;
 }
 
 .insideform {
@@ -80,7 +88,16 @@ form {
     width: 10rem;
     height: 10rem;
     margin-bottom: 30px;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}
 
+.logo:hover {
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    /*transform: rotateY(180deg);
+    -webkit-transform: rotateY(.5);*/
+    background-color: wheat;
 }
 
 .please {
@@ -107,16 +124,14 @@ form {
     width: 100%;
     margin-bottom: 2rem;
     position: relative;
-    height: 50px;
+    height: 3rem;
     display: flex;
 }
 
 .entryarea i {
     position: absolute;
-    z-index: 1111;
+    right: 15px;
     margin-left: 90%;
-    width: 100%;
-    height: 100%;
     margin-top: 13px;
     font-size: 24px;
 }
@@ -146,14 +161,14 @@ form {
 
 input:focus,
 input:valid {
-    color: #6f0;
-    border: 4px solid #6f0;
+    color: #80471c;
+    border: 4px solid #80471c;
 
 }
 
 input:focus+.labelline,
 input:valid+.labelline {
-    color: #6f0;
+    color: #80471c;
     padding: 0 5px;
     transform: translate(3px, -24px) scale(0.88);
     z-index: 1111;
@@ -167,18 +182,33 @@ input:valid+.labelline {
     color: #757575;
 }
 
+.remember input {
+    width: 20px;
+    height: 20px;
+
+}
+
 .login {
     width: 100%;
     margin-bottom: 30px;
 }
 
 .login input {
+    transition: 0.5s ease-in;
+    background-color: #80471c;
+    color: wheat;
     width: 100%;
     border: 1px solid #ccc;
     height: 2.5rem;
     text-align: center;
     margin: 0 auto;
     font-size: larger;
+}
+
+.login input:hover {
+    background-color: wheat;
+    color: #80471c;
+
 }
 
 .forgot {
@@ -203,7 +233,7 @@ input:valid+.labelline {
     text-align: center;
     border: 1px solid black;
     border-radius: 4px;
-    color: red;
-    background-color: transparent;
+    color: wheat;
+    background-color: #80471c;
 
 }
