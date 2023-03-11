@@ -15,6 +15,7 @@ html,
 body {
     display: flex;
     justify-content: center;
+    flex-shrink: inherit;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -32,8 +33,37 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px inset #ccc;
+    border: 1px solid #ccc;
     background-color: #fff;
+}
+
+.history {
+    width: 25%;
+    padding: 2rem;
+    height: 80%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.ihistory {
+    width: 100%;
+    height: auto;
+    background-color: #6f0;
+}
+
+.title {
+    width: 100%;
+    margin-bottom: 2rem;
+    color: #80471c;
+}
+
+.story p {
+    font-size: 20px;
+    line-height: 2rem;
+    word-wrap: break-word;
 }
 
 .insideform {
