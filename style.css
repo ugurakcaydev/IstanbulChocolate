@@ -1,25 +1,11 @@
-@media (min-width: 768px) {
-    .gradient-form {
-        height: 100vh !important;
-    }
-}
-
-@media (min-width: 769px) {
-    .gradient-custom-2 {
-        border-top-right-radius: .3rem;
-        border-bottom-right-radius: .3rem;
-    }
-}
-
 html,
 body {
     display: flex;
     justify-content: center;
-    flex-shrink: inherit;
     align-items: center;
     height: 100%;
     width: 100%;
-    background: url(./images/3.jpg) no-repeat center center fixed;
+    background: url(./images/3.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -42,19 +28,18 @@ form {
     padding: 2rem;
     height: 80%;
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-
+    font-family: auto;
+    word-wrap: break-word;
 }
 
 .ihistory {
     width: 100%;
     height: auto;
-    margin-top: -1rem;
+    margin-top: 15rem;
 }
 
 .title {
@@ -67,12 +52,17 @@ form {
     color: #80471c;
 }
 
-.story p {
-    font-size: 20px;
+
+.multiText {
+    color: wheat;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
     line-height: 2rem;
-    word-wrap: break-word;
-    color: #80471c;
+    font-size: 1.5rem;
+
 }
+
 
 .insideform {
     display: flex;
@@ -93,10 +83,8 @@ form {
 }
 
 .logo:hover {
-    transform: scale(.5);
-    -webkit-transform: scale(.5);
-    /*transform: rotateY(180deg);
-    -webkit-transform: rotateY(.5);*/
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(.5);
     background-color: wheat;
 }
 
