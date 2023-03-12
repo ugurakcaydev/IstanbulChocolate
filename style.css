@@ -95,11 +95,11 @@ form {
 
 }
 
-.logo:hover {
+/* .logo:hover {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(.5);
     background-color: wheat;
-}
+} */
 
 .please {
     width: 100%;
