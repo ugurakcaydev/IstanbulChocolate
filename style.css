@@ -14,6 +14,14 @@ body {
     background-position: center;
 }
 
+/* video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+} */
+
+/*İKİ FORMU KAPSAYIP TEK FORM YAPMAK İSTERSEK */
 .forms {
     display: flex;
     width: 50%;
@@ -22,6 +30,7 @@ body {
     backdrop-filter: blur(5px);
 }
 
+/*SOL TARAFA BACKGROUND EKLEME */
 .form {
     width: 50%;
     padding: 2rem;
@@ -35,6 +44,7 @@ body {
 
 }
 
+/*SAĞ TARAFA BACKGROUND EKLEME */
 .form-inside {
     height: 100%;
     /* background-image: url(./images/5.JPG);
@@ -184,11 +194,12 @@ input:valid {
 
 input:focus+.labelline,
 input:valid+.labelline {
-    color: antiquewhite;
+    color: white;
     padding: 0 5px;
     transform: translate(3px, -24px) scale(0.88);
     z-index: 1111;
-    background-color: #3c212181;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
 }
 
 .remember {
