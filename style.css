@@ -1,37 +1,28 @@
-html,
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    /* background: url(./images/3.jpg) no-repeat center fixed;*/
-    background-color: bisque;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
+    min-height: 100vh;
 }
 
 form {
-    width: 25%;
-    height: 80%;
+    width: 37.5rem;
+    height: 56.25rem;
     padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: 3px solid white;
-    background-color: #fff;
+    background-color: #ebe5e5;
 }
 
 .second-form {
-    width: 25%;
-    height: 80%;
+    width: 37.5rem;
+    height: 56.25rem;
     border: 1px solid #ccc;
     position: relative;
     border-style: none;
-
 }
 
 .form-inside {
@@ -40,7 +31,7 @@ form {
 
 .form-inside img {
     position: absolute;
-    filter: blur(4px);
+    filter: blur(2px);
 }
 
 .title {
@@ -48,7 +39,7 @@ form {
     height: 100%;
     top: 0;
     position: absolute;
-    padding: 13rem 24px;
+    padding: 10rem 24px;
     font-size: 25px;
     word-wrap: break-word;
     color: #fff;
@@ -57,11 +48,11 @@ form {
 
 .title h1 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
-.multiTextt {
-    font-size: 1.5rem;
+.multidiv {
+    font-size: 1.4rem;
     word-wrap: break-word;
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
@@ -75,30 +66,27 @@ form {
 .insideform {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    width: 100%;
     height: 100%;
-    padding: 40px;
 }
 
 .logo {
-    background-color: #80471c;
     width: 13rem;
     height: 13rem;
     margin-bottom: 30px;
     border-radius: 50%;
-    transition: all .5s ease-in-out;
+    transition: all 1.2s linear;
 }
 
 .logo img {
     border-radius: 50%;
-
 }
 
 .logo:hover {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(.5);
-    background-color: wheat;
+    /* transform: rotateY(180deg);
+    -webkit-transform: rotateY(.5); */
+    transform: rotate(-360deg);
 }
 
 .please {
@@ -111,6 +99,7 @@ form {
 
 .please span {
     font-size: medium;
+    color: black;
 }
 
 .welcome {
@@ -175,7 +164,7 @@ input:valid+.labelline {
     padding: 0 5px;
     transform: translate(3px, -24px) scale(0.88);
     z-index: 1111;
-    background-color: rgb(255, 255, 255);
+    background-color: #ebe5e5;
 }
 
 .remember {
@@ -240,13 +229,13 @@ input:valid+.labelline {
     text-align: center;
     border: 1px solid black;
     border-radius: 4px;
-    color: black;
-    background-color: transparent;
+    color: antiquewhite;
+    background-color: #80471c;
 }
 
 .register input:hover {
-    background-color: #80471c;
-    color: antiquewhite;
+    background-color: antiquewhite;
+    color: #80471c;
     transition: 0.3s ease-in;
 
 
