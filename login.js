@@ -7,8 +7,8 @@ function showPassword(id, el) {
         x.type = "text";
         el.classList.toggle("fa-eye")
 
-        console.log(x.type);
-        console.log(el.classList)
+        console.log("if " + x.type)
+        console.log("if " + el.classList[2])
     } else {
         x.type = "password";
         el.classList.toggle("fa-eye")

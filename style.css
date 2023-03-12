@@ -1,12 +1,12 @@
 html,
 body {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
-     /* background: url(./images/3.jpg) no-repeat center fixed;*/
-     background-color: bisque;
+    /* background: url(./images/3.jpg) no-repeat center fixed;*/
+    background-color: bisque;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,44 +30,46 @@ form {
     height: 80%;
     border: 1px solid #ccc;
     position: relative;
-    display: flex;
     border-style: none;
-    
+
 }
+
+.form-inside {
+    height: 100%;
+}
+
 .form-inside img {
     position: absolute;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     filter: blur(4px);
 }
+
 .title {
     width: 100%;
     height: 100%;
-    display: flex;
+    top: 0;
     position: absolute;
+    padding: 13rem 24px;
     font-size: 25px;
     word-wrap: break-word;
-    top: 10rem;
-    justify-content: center;
     color: #fff;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
-.multiTextt{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+
+.title h1 {
     text-align: center;
-    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.multiTextt {
     font-size: 1.5rem;
     word-wrap: break-word;
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
+}
 
+.multiText {
+    word-wrap: break-word;
+    color: #fff;
 }
 
 .insideform {
@@ -87,7 +89,8 @@ form {
     border-radius: 50%;
     transition: all .5s ease-in-out;
 }
-.logo img{
+
+.logo img {
     border-radius: 50%;
 
 }
@@ -220,7 +223,8 @@ input:valid+.labelline {
     color: #757575;
     font-size: larger;
 }
-.forgot:hover{
+
+.forgot:hover {
     text-decoration: underline;
 }
 
@@ -239,14 +243,16 @@ input:valid+.labelline {
     color: black;
     background-color: transparent;
 }
-.register input:hover{
-    background-color:#80471c ;
+
+.register input:hover {
+    background-color: #80471c;
     color: antiquewhite;
     transition: 0.3s ease-in;
 
 
 }
-.register input:not(:hover){
-   transition: 0.3s ease-out;
+
+.register input:not(:hover) {
+    transition: 0.3s ease-out;
 
 }
