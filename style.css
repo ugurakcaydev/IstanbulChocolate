@@ -14,12 +14,11 @@ body {
 .background {
     position: relative;
     min-height: 100vh;
-    background-image: url(./images/3.jpg);
+    width: 100%;
+    background-image: url(./images/bg1.jpg);
     background-size: cover;
     background-position: center;
-    width: 100%;
-    filter: blur(1px);
-    backdrop-filter: blur(1px);
+   
 }
 
 /* video {
@@ -34,11 +33,10 @@ body {
     position: absolute;
     display: flex;
     width: 50%;
-
-    /* background-image: url(./images/bg1.jpg);
+    /* background-image: url(./images/3.jpg);
     background-size: cover;
-    background-position: center;
-     filter: blur(1px);
+    background-position: center; */
+    /* filter: blur(1px);
     backdrop-filter: blur(1px);  */
 
 }
@@ -49,6 +47,8 @@ body {
     padding: 2rem;
     border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color:  #8B0000; */
     /* border-right: 1px solid antiquewhite;
     border-left: 1px solid antiquewhite; */
     /* background-color: rgba(0, 0, 0, 0.5); */
@@ -66,12 +66,12 @@ body {
     height: 100%;
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
-     /* background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);  */
-    /* background-image: url(./images/bg1.jpg);
+    /* background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);  */
+    background-image: url(./images/5.jpg);
     background-size: cover;
     background-position: center;
     filter: blur(1px);
-    backdrop-filter: blur(1px); */
+    backdrop-filter: blur(1px);
 
 }
 

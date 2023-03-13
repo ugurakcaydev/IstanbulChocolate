@@ -13,7 +13,7 @@ function showPassword(id, el) {
 }
 
 var typingEffect = new Typed(".multiText", {/*multiTextt düzgün çalışmıyor.*/
-    strings: ["İstanbul Çikolataları’nın Türkiye’nin kakao, çikolata ve şekerleme sektöründeki en büyük markalardan biri olma yolundaki ilk adım Beyoğlu’ndaki ilk mağazası ile atılır. 200’ü aşkın ürün çeşidi ile, madlen, spesiyal, draje gibi klasikleşmiş çeşitleri, özel gün çikolataları ve hediye sepetlerinin yanı sıra şirketin altı şehir içi mağazası, büyük metropol havaalanlarında beş mağazası ve küçük bir posta siparişi şubesi ile sektöre öncülük edilmesinde Beyoğlu’ndaki bu ilk mağaza çok önemli bir adımdır. Çünkü Beyoğlu’ndaki bu ilk mağaza tatlı severlerle İstanbul Çikolataları’nın buluştuğu ilk mekandır."],
+    strings: ["The first step for Istanbul Chocolates to become one of the biggest brands in Turkey's cocoa, chocolate and confectionery sector is taken with its first store in Beyoğlu. With more than 200 product types, classic varieties such as madlens, specialties, dragees, special day chocolates and gift baskets, the company's six city stores, five stores in major metropolitan airports and a small mail order branch in Beyoğlu lead the sector. The first store is a very important step. Because this first store in Beyoğlu is the first place where sweet lovers and Istanbul Chocolates meet."],
     loop: false,
     typeSpeed: 60,
 })
