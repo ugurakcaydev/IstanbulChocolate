@@ -9,9 +9,17 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(./images/bg1.jpg);
+}
+
+.background {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(./images/3.jpg);
     background-size: cover;
     background-position: center;
+    width: 100%;
+    filter: blur(1px);
+    backdrop-filter: blur(1px);
 }
 
 /* video {
@@ -23,46 +31,56 @@ body {
 
 /*İKİ FORMU KAPSAYIP TEK FORM YAPMAK İSTERSEK */
 .forms {
+    position: absolute;
     display: flex;
     width: 50%;
-     background-color: rgba(0, 0, 0, 0.5); 
-    border: 1px inset antiquewhite;
-    border-radius: 14px;
-    backdrop-filter: blur(2px);
+
+    /* background-image: url(./images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+     filter: blur(1px);
+    backdrop-filter: blur(1px);  */
+
 }
 
 /*SOL TARAFA BACKGROUND EKLEME */
 .form {
     width: 50%;
     padding: 2rem;
-    border-right: 1px solid antiquewhite;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    /* border-right: 1px solid antiquewhite;
+    border-left: 1px solid antiquewhite; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+
 }
 
 .second-form {
     width: 50%;
     position: relative;
-    border-style: none;
-
+    /* border-right: 1px solid antiquewhite; */
 }
 
 /*SAĞ TARAFA BACKGROUND EKLEME */
-.form-inside {
+.second-form-img {
     height: 100%;
-    /* background-image: url(./images/5.JPG);
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+     /* background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);  */
+    /* background-image: url(./images/bg1.jpg);
     background-size: cover;
     background-position: center;
-    border-radius: 14px;
-    filter: blur(5px);
-    backdrop-filter: blur(5px); */
+    filter: blur(1px);
+    backdrop-filter: blur(1px); */
 
 }
 
-.form-inside img {
+/* .form-inside img {
     position: absolute;
     filter: blur(2px);
-}
+} */
 
-.title {
+.about {
     width: 100%;
     height: 100%;
     top: 0;
@@ -74,7 +92,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.title h1 {
+.about h1 {
     text-align: center;
     margin-bottom: 5rem;
 }
