@@ -25,16 +25,17 @@ body {
 .forms {
     display: flex;
     width: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+     background-color: rgba(0, 0, 0, 0.5); 
+    border: 1px inset antiquewhite;
     border-radius: 14px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
 }
 
 /*SOL TARAFA BACKGROUND EKLEME */
 .form {
     width: 50%;
     padding: 2rem;
-    border-right: 5px solid antiquewhite;
+    border-right: 1px solid antiquewhite;
 }
 
 .second-form {
@@ -126,6 +127,8 @@ body {
 .please span {
     font-size: medium;
     color: antiquewhite;
+    margin-bottom: 1rem;
+    padding-left: 10px;
 }
 
 .welcome {
@@ -163,21 +166,19 @@ body {
 }
 
 .entryarea input {
-    position: absolute;
     width: 100%;
     height: 3rem;
     outline: none;
     border: 2px solid antiquewhite;
-    padding-left: 10px;
     z-index: 1111;
     background-color: transparent;
     border-radius: 8px;
+    padding-left: 10px;
 }
 
 .labelline {
-
     position: absolute;
-    padding: 0 20px;
+    padding-left: 20px;
     margin-top: 10px;
     color: antiquewhite;
     font-size: large;
@@ -194,12 +195,12 @@ input:valid {
 
 input:focus+.labelline,
 input:valid+.labelline {
-    color: white;
+    color: antiquewhite;
     padding: 0 5px;
-    transform: translate(3px, -24px) scale(0.88);
+    transform: translate(-1px, -33px) scale(0.88);
     z-index: 1111;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+    /* background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); */
 }
 
 .remember {
